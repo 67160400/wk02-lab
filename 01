@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <meta name="description" content="Portfolio แสดงผลงานและข้อมูลส่วนตัว" />
+    <meta name="keywords" content="html5, web design" />
+  </head>
+
+  <body>
+    <!-- TODO: สร้าง header -->
+    <header>
+      <h1>My Portfolio</h1>
+    </header>
+
+    <!-- TODO: สร้าง main ที่มี -->
+    <!-- 1. About section -->
+    <!-- - หัวข้อ -->
+    <!-- - รูปภาพตัวเอง <img> -->
+    <!-- - ข้อมูลประกอบ -->
+    <main>
+      <!-- About -->
+      <section id="about">
+        <h2>เกี่ยวกับฉัน</h2>
+
+        <picture>
+          <source srcset="me1.jpg" media="(min-width:600px)" />
+          <img src="me1.jpg" alt="รูปภาพของฉัน" width="150" />
+        </picture>
+        <p>
+          สวัสดีค่ะ ฉันชื่อนิรชา ชัยสุข เป็นนิสิตของมหาวิทยาลัยบูรพา ชั้นปีที่ 2
+          คณะวิทยาการสารสนเทศ สาขาวิชาเทคโนโลยีสารสนเทศเพื่ออุตสาหกรรมดิจิทัล
+        </p>
+
+        <table border="1" cellspacing="0" cellpadding="5">
+          <tr>
+            <th>ทักษะ</th>
+            <th>ระดับ</th>
+          </tr>
+          <tr>
+            <td>HTML</td>
+            <td>ดี</td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td>ดี</td>
+          </tr>
+        </table>
+      </section>
+
+      <!-- 2. Portfolio section -->
+      <!-- - List of projects ใช้ <figure> และ <figcaption> -->
+      <section id="portfolio">
+        <h2>ผลงานของฉัน</h2>
+
+        <figure>
+          <img src="project1.jpg" alt="โปรเจค 1" width="300" />
+          <figcaption>เว็บไซต์ร้านค้าออนไลน์</figcaption>
+        </figure>
+
+        <figure>
+          <img src="project2.jpg" alt="โปรเจค 2" width="300" />
+          <figcaption>เว็บบล็อกส่วนตัว</figcaption>
+        </figure>
+      </section>
+
+      <!-- 3. Contact section -->
+      <!-- - Contact form -->
+      <section id="contact">
+        <h2>ติดต่อฉัน</h2>
+        <form action="/send-message" method="POST">
+          <label for="name">ชื่อ:</label><br />
+          <input type="text" id="name" name="name" required /><br />
+
+          <label for="email">อีเมล:</label><br />
+          <input type="email" id="email" name="email" required /><br />
+
+          <label for="message">ข้อความ:</label><br />
+          <textarea id="message" name="message" rows="4" required></textarea
+          ><br />
+
+          <button type="submit">ส่งข้อความ</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- TODO: สร้าง footer -->
+    <footer>
+      <p>© 2025 ชื่อของคุณ</p>
+    </footer>
+  </body>
+</html>
