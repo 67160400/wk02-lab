@@ -12,6 +12,15 @@
     <!-- TODO: สร้าง header -->
     <header>
       <h1>My Portfolio</h1>
+
+      <nav>
+        <ul>
+          <li><a href="#about">เกี่ยวกับฉัน</a></li>
+          <li><a href="#skills">ทักษะ</a></li>
+          <li><a href="#portfolio">ผลงาน</a></li>
+          <li><a href="#contact">ติดต่อ</a></li>
+        </ul>
+      </nav>
     </header>
 
     <!-- TODO: สร้าง main ที่มี -->
@@ -31,21 +40,46 @@
 
         <p>
           สวัสดีค่ะ ฉันชื่อนิรชา ชัยสุข เป็นนิสิตของมหาวิทยาลัยบูรพา ชั้นปีที่ 2
-          คณะวิทยาการสารสนเทศ สาขาวิชาเทคโนโลยีสารสนเทศเพื่ออุตสาหกรรมดิจิทัล 1
+          คณะวิทยาการสารสนเทศ สาขาวิชาเทคโนโลยีสารสนเทศเพื่ออุตสาหกรรมดิจิทัล
         </p>
+      </section>
 
-        <table border="1" cellspacing="0" cellpadding="5">
+      <section id="skills">
+        <h2>ทักษะ</h2>
+        <table border="1" cellspacing="0" cellpadding="6" width="250">
           <tr>
             <th>ทักษะ</th>
             <th>ระดับ</th>
           </tr>
           <tr>
-            <td>HTML</td>
-            <td>พอใช้</td>
+            <td style="text-align: center; vertical-align: middle">
+              <img src="images/html.png" alt="รูปภาพของฉัน" width="50" />
+              <br />
+              HTML
+            </td>
+            <td style="text-align: center; vertical-align: middle">พอใช้</td>
           </tr>
           <tr>
-            <td>CSS</td>
-            <td>พอใช้</td>
+            <td style="text-align: center; vertical-align: middle">
+              <img src="images/css.png" alt="รูปภาพของฉัน" width="50" />
+              <br />CSS
+            </td>
+            <td style="text-align: center; vertical-align: middle">พอใช้</td>
+          </tr>
+          <tr>
+            <td style="text-align: center; vertical-align: middle">
+              <img src="images/javaScript.png" alt="รูปภาพของฉัน" width="50" />
+              <br />
+              JavaScript
+            </td>
+            <td style="text-align: center; vertical-align: middle">พอใช้</td>
+          </tr>
+          <tr>
+            <td style="text-align: center; vertical-align: middle">
+              <img src="images/java.png" alt="รูปภาพของฉัน" width="50" />
+              <br />Java
+            </td>
+            <td style="text-align: center; vertical-align: middle">ดี</td>
           </tr>
         </table>
       </section>
@@ -56,13 +90,13 @@
         <h2>ผลงานของฉัน</h2>
 
         <figure>
-          <img src="images/css.png" alt="โปรเจค 1" width="100" />
-          <figcaption>เว็บไซต์ร้านค้าออนไลน์</figcaption>
+          <img src="images/project1.png" alt="โปรเจค 1" width="500" />
+          <figcaption>โปรเจค 1: โครงงานเว็บสนามบินจำลอง</figcaption>
         </figure>
 
         <figure>
-          <img src="images/javaScript.png" alt="โปรเจค 2" width="100" />
-          <figcaption>เว็บบล็อกส่วนตัว</figcaption>
+          <img src="images/project2.png" alt="โปรเจค 2" width="300" />
+          <figcaption>โปรเจค 2: เกมจาก scratch</figcaption>
         </figure>
       </section>
 
@@ -72,13 +106,31 @@
         <h2>ติดต่อฉัน</h2>
         <form action="/send-message" method="POST">
           <label for="name">ชื่อ:</label><br />
-          <input type="text" id="name" name="name" required /><br />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            style="width: 200px"
+            required
+          /><br />
 
           <label for="email">อีเมล:</label><br />
-          <input type="email" id="email" name="email" required /><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            style="width: 200px"
+            required
+          /><br />
 
           <label for="message">ข้อความ:</label><br />
-          <textarea id="message" name="message" rows="4" required></textarea
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            cols="50"
+            required
+          ></textarea
           ><br />
 
           <button type="submit">ส่งข้อความ</button>
@@ -88,7 +140,16 @@
 
     <!-- TODO: สร้าง footer -->
     <footer>
-      <p>© 2025 ชื่อของคุณ</p>
+      <p>© 2025 My Portfolio</p>
+
+      <nav>
+        <ul>
+          <li><a href="#about">เกี่ยวกับฉัน</a></li>
+          <li><a href="#skills">ทักษะ</a></li>
+          <li><a href="#portfolio">ผลงาน</a></li>
+          <li><a href="#contact">ติดต่อ</a></li>
+        </ul>
+      </nav>
     </footer>
   </body>
 </html>
