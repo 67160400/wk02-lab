@@ -7,7 +7,7 @@
   </head>
   <body>
     <form action="/register" method="POST">
-      <fieldset>
+      <fieldset style="width: 500px">
         <legend>ข้อมูลส่วนตัว</legend>
         <label for="fname">ชื่อจริง:</label>
         <input type="text" id="fname" name="firstname" required />
@@ -21,7 +21,6 @@
 
         <label for="birthday">วันเกิด:</label>
         <input type="date" id="birthday" name="birthday" required />
-
         <fieldset>
           <legend>เพศ:</legend>
           <input type="radio" id="male" name="gender" value="male" />
@@ -44,7 +43,7 @@
 
         <label for="message">ข้อมูลเพิ่มเติม:</label>
         <br />
-        <textarea id="message" name="message" rows="5" cols="40"></textarea>
+        <textarea id="message" name="message" rows="5" cols="60"></textarea>
         <br />
 
         <input type="checkbox" id="agree" name="agree" required />
